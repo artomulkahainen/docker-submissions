@@ -1,0 +1,18 @@
+STARTING:
+sudo docker run -d -it --name helsinki ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+sudo docker attach --sig-proxy=false 30
+
+
+GETTING INSIDE THE CONTAINER:
+
+sudo docker exec -it 30 bash
+
+apt-get update; apt-get install curl
+
+
+USING CONTAINER OUTSIDE:
+sudo docker attach 30
+helsinki.fi
+
+
