@@ -1,0 +1,15 @@
+sudo docker run devopsdockeruh/exec_bash_exercise
+
+sudo docker attach --sig-proxy=false 2d
+
+sudo docker exec -it 2d bash
+
+tail -f ./logs.txt
+
+Thu, 20 Aug 2020 09:36:44 GMT
+Thu, 20 Aug 2020 09:36:47 GMT
+Thu, 20 Aug 2020 09:36:50 GMT
+Thu, 20 Aug 2020 09:36:53 GMT
+Secret message is:
+"Docker is easy"
+
